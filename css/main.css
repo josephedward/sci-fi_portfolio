@@ -30,7 +30,7 @@ body {
 
 #header {
   top:0% !important;
-  z-index: 10 !important;
+  /* z-index: 10 !important; */
   position: fixed !important;
   min-height: 5% !important;
   background-color: black !important;
@@ -68,6 +68,10 @@ body {
 
 #main {
   min-height: 60%;
+  /* margin-top:100px;
+  margin-bottom:100px;
+  overflow: visible; */
+  /* position: absolute; */
   /* background-image: url(./images/g2.gif);
   background-size: 100%;
   background-position: center center;
@@ -104,6 +108,11 @@ min-height: 1px; */
   overflow-y: scroll;
   /* font-family: "savedbyzero"; */
   float: left;
+  margin-top: 150px !important;
+  /* bottom:0; */
+  z-index: 10 !important;
+  display: block !important;
+  /* position: absolute; */
 }
 
 .skills {
@@ -118,6 +127,10 @@ min-height: 1px; */
 #pCard1 {
   overflow-y: scroll;
   float: right;
+  margin-top: 150px !important;
+  z-index: 10 !important;
+  display: block !important;
+  /* position: absolute; */
 }
 
 #d1 {
@@ -140,11 +153,13 @@ img {
 #imgDisplay {
   margin-top: 12.5% !important;
   height: 280px !important;
+  z-index: 10;
 }
 
 #hidCaro{
   margin-top: 12.5% !important;
   height: 280px !important;
+  z-index: 10;
 }
 
 .dropdown {
@@ -163,7 +178,7 @@ img {
 }
 
 .blackSpace {
-  height: 15%;
+  height: 100px;
   background-color: #000000;
   border: 5px solid orangered;
   position: relative;
@@ -190,7 +205,7 @@ img {
     width: 100vw !important;
     /* margin-top:100px !important;
     margin-bottom:100px !important; */
-
+    margin-top: -50px;
     padding:100px !important;
     text-align: center !important;
     right: 0 !important;
