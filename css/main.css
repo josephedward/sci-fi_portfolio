@@ -30,7 +30,7 @@ body {
 
 #header {
   top:0% !important;
-  z-index: 20 !important;
+  /* z-index: 20 !important; */
   position: fixed !important;
   min-height: 5% !important;
   background-color: black !important;
