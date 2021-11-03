@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- googles jquery -->
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <!-- bootstrap js -->
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -18,29 +18,13 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
 
-  <!-- Scripts for appending elements -->
+
   <script src="./js/init.js" defer></script>
   <script src="./js/carosel.js" defer></script>
   <script src="./js/cards.js" defer></script>
 
-  <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-
-  <!-- colors -->
   <link rel="stylesheet" href="https://rawgit.com/fantasyui-com/synthwave/master/style.css" />
-  <!-- <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
-  /> -->
-
-  <!-- <link
-    rel="stylesheet"
-    href="./css/reset.css"
-  />
-  <link
-  rel="stylesheet"
-  href="./css/normalize.css"
-/> -->
 
   <link rel="stylesheet" href="./css/main.css">
 
@@ -50,30 +34,16 @@
 <body>
   <div id="header">
     <div id="headCont">
-      <!-- <a
-          id="hE1"
-          class="headElem"
-          href="https://docs.google.com/document/d/1yomhCY-0s7aRJmUtoTV7svCdGEEEk_PSVRgSBI8EDlg/edit?usp=sharing"
-          >C.V.</a
-        > -->
       <h1 id="myName" class="text-center headElem">
         Joseph Edward ___ WEB DEVELOPER
       </h1>
-      <!-- <h1 id="myName" class="text-center">WEB DEVELOPER</h1> -->
-      <!-- <p id="hE2" class="headElem">Contact</p> -->
     </div>
     <div class="blackSpace synthwave-x"></div>
   </div>
 
-
-  <!-- <div id="hidCaro"> -->
   <div id="hidCaro" class="card text-center" style="width: 18rem; height:18rem;">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <!-- </div> -->
-
-      <!-- Was missing, dont forget -->
       <div class="carousel-inner">
-        <!-- Need to specify where to start? -->
         <div class="carousel-item active">
           <img class="d-block w-100" src="./images/joe/2.JPG" alt="Slide" />
         </div>
@@ -140,10 +110,6 @@
     </div>
   </div>
 
-
-  <!-- </div> -->
-
-
   <div id="main">
     <div class="row text-center mh-100">
       <div class="col text-center mh-100">
@@ -183,11 +149,11 @@
 
       <div id="imgDisplay" class="card text-center" style="width: 18rem; height:18rem;">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <!-- </div> -->
+          
 
-          <!-- Was missing, dont forget -->
+          
           <div class="carousel-inner">
-            <!-- Need to specify where to start? -->
+          
             <div class="carousel-item active">
               <img class="d-block w-100" src="./images/joe/2.JPG" alt="Slide" />
             </div>
@@ -261,16 +227,10 @@
               <button class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown">
                 Projects <span class="caret "></span>
               </button>
-
-              <!-- <div id="project_menu"></div> -->
               <ul class="dropdown-menu">
                 <input class="form-control" id="myInput" type="text" placeholder="Search.." />
-                <!-- <li><a id="L1" class="pLink" href="#">LACEcalc</a></li>
-                <li><a id="L2" class="pLink" href="#">AWS Polly</a></li> -->
-                <li><a class="pLink" href="https://libridex-client.herokuapp.com/">Libridex</a></li>
-                <li><a  class="pLink" href="https://eosjs-chain-nav.herokuapp.com//">EOS Chain Navigator</a></li>
-                <!-- <li><a id="L3" class="pLink" href="#">BOOSTcalc</a></li> -->
-                <!-- <li><a href="https://vaaacares.com/">VAAACares</a></li>  -->
+                <li><a class="pLink" href="https://libridex.herokuapp.com/">Libridex</a></li>
+                <li><a  class="pLink" href="https://eosjs-chain-nav.herokuapp.com/">EOS Chain Navigator</a></li>
               </ul>
             </div>
           </form>
@@ -300,131 +260,34 @@
         $(".blackSpace").hide();
         $("#imgDisplay").hide();
         $("#hidCaro").show();
-        // Works
+      
         $("#ab1").addClass("singleCol");
-        // $("#ab1").hide();
+       
         $("#pCard1").addClass("singleCol");
 
-        // let caro = $("#imgDisplay")
-        // $("#imgDisplay").hide();
-        // $("#main").prepend($(caro));
-
+       
       }
       if (w > 1000) {
         $(".blackSpace").show();
         $("#hidCaro").hide();
         $("#imgDisplay").show();
-        $("#ab1").removeClass("singleCol");
-        // $("#ab1").show();
+        $("#ab1").removeClass("singleCol");    
         $("#pCard1").removeClass("singleCol");
-        // let caro = $("#imgDisplay")
-        // $("#imgDisplay").show();
-        // $("#main").prepend($(caro));
-
+    
       }
-      // Display result inside a div element
       document.getElementById("result").innerHTML =
         "Width: " + w + ", " + "Height: " + h;
     }
-    // Attaching the event listener function to window's resize event
+    
     window.addEventListener("resize", displayWindowSize);
-    // Calling the function for the first time
+    
     displayWindowSize();
   </script>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!-- Load our React component. -->
+  
   <script type="module" src="project_menu.js"></script>
 </body>
 
 </html>
-
-<!-- ************************************************************UNUSED**************************************************************
-
-
-
- Only use what you have cards for
-                               <li><a href="https://github.com/josephedward/L.I.R.I.">L.I.R.I</a></li>
-                            <li><a href="https://josephvesley.github.io/rock-paper-scissors/">Rock-Paper-Scissors</a></li>
-                            <li><a href="https://josephedward.github.io/machine_learning_extra_basic/">machine_learning_extra_basic</a></li>
-                            <li><a href="https://josephedward.github.io/group-project-1/">bridgecontrol</a></li>
-                            <li><a href="https://josephedward.github.io/thomas-the-train-scheduler/">thomas-the-train-scheduler</a></li>
-                            <li><a href="https://josephedward.github.io/mad-libs-gifs/">mad-libs-gifs</a></li>
-                            <li><a href="https://josephedward.github.io/gif_tasty/">gif_tasty</a></li>
-                            <li><a href="https://josephedward.github.io/trivia-game-advanced/">trivia-game-advanced</a></li>
-                            <li><a href="https://josephedward.github.io/trivia-game-simple/">trivia-game-simple</a></li>
-                            <li><a href="https://josephedward.github.io/star-wars-rpg/">star-wars-rpg</a></li>
-                            <li><a href="https://josephedward.github.io/crystal-collector/">crystal-collector</a></li>
-                            <li><a href="https://josephedward.github.io/word-guess-game/">word-guess-game</a></li>
-                            <li><a href="https://josephedward.github.io/psychic-game/">psychic-game</a></li>
-                            <li><a href="https://github.com/josephedward/responsive-portfolio">portfolio-with-media-queries</a></li>
-                            <li><a href="https://github.com/josephedward/bootstrap-portfolio">Example-Bootstrap-portfolio</a></li>
-                            <li><a href="https://github.com/josephedward/Wireframe">Wireframe</a></li>
-                            <li><a href="https://github.com/josephedward/BOOSTcalc">BOOSTcalc</a></li>
-                            <li><a href="https://github.com/josephedward/LACEcalc">LACEcalc</a></li>
-                            <li><a href="https://vaaacares.com/">VAAACares</a></li>  -->
-<!-- <li><a href="polly_ex.html">AWS Polly</a></li>  -->
-<!-- pointless to link to until you have the right s3 URL - grab it from AWS 
-
-
-
-
-
-
-
-
-
-
-        /* padding: 0 auto; */
-        /* top: 0%; */
-        /* float:center; */
-        /* color:black; */
-        /* float: left; */
-        /* display:block; */
-        /* padding-top: 30px; */
-
-
-
-      /* #headCont{
-  /* float:left; 
-}*/
-
-      /* 
-      #imgHold {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 10px;
-    position: relative;
-}
-.crop {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto; 
-    height: auto;
-    width: auto;
-} */
-
-
-
- <li><a href="polly_ex.html">AWS Polly</a></li>  
-                      pointless to link to until you have the right s3 URL 
-
-
-
-<link type="stylesheet/css" href="./css/synthwave1.css" /> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js"></script>
-<script src="js/threeEx.js" async defer></script>
-You don’t need to write mediaqueries for every possible screen resolution. To keep things simple you could target four groups:
-
-smaller than or equal to 768 px (smartphones)
-larger than 768 px (small devices, tablets)
-larger than 992 px (medium devices)
-larger than 1200px (large devices)
-Those are the breakpoints as used by the very popular Twitter Bootstrap framework.
-
- -->
