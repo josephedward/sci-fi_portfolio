@@ -19,7 +19,7 @@
   src: url("../fonts/Outrun future Bold Italic.otf") format("opentype");
 }
 body {
-  height: 1200px;
+  height: 100vh !important;
   background-image: url(../images/g2.gif);
   background-size: 100%;
   background-position: center center;
@@ -30,7 +30,7 @@ body {
 
 #header {
   top:0% !important;
-  /* z-index: 20 !important; */
+  z-index: 20 !important;
   position: fixed !important;
   min-height: 5% !important;
   background-color: black !important;
@@ -44,15 +44,11 @@ body {
 
 .headElem {
   margin: 0 auto;
-  /* padding-left: 55px;
-  padding-right: 55px; */
-  /* float:left;  */
   display: inline;
 }
 
 #hE1 {
   padding-right: 325px;
-  /* Had to add styling here to override "a" tag styling */
   min-height: 5% !important;
   background-color: black !important;
   font-family: "Outrun future Bold Italic" !important;
@@ -66,71 +62,54 @@ body {
   padding-left: 325px;
 }
 
-#main {
-  min-height: 60%;
-  /* margin-top:100px;
-  margin-bottom:100px;
-  overflow: visible; */
-  /* position: absolute; */
-  /* background-image: url(./images/g2.gif);
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
+
+marquee {
+  max-width: 75%;
+  height: 100vh;
+  padding: 0 20px;
+  background-color: #000;
+  color: #0f0;
+  border: 1px solid #000;
+  border-radius: 20px;
+  outline: 10px outset #aaa;
+  text-align: center;
+  z-index: 100;
+}
+li {
+  list-style: none;
+}
+.li {
+  text-align: left;
 }
 
-.row {
-  height: 100vh;
-  min-height: 100% !important;
+#main {
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
 }
+
+
 
 .col {
   height: 100% !important;
   position: sticky;
-  /* border-top: 1px solid white;
-border-bottom: 1px solid white; */
-  /* padding-top: 1rem;
-padding-bottom: 1rem;
-min-height: 1px; */
 }
 .card {
-  margin: 0 auto !important;
-  height: 120% !important;
   border: 5px solid blue;
   outline: 5px solid greenyellow;
   background-color: #000000;
   color: lawngreen;
-  /* overflow:scroll; */
-}
-
-#ab1 {
-  overflow-y: scroll;
-  /* font-family: "savedbyzero"; */
-  float: left;
-  margin-top: 150px !important;
-  /* bottom:0; */
-  z-index: 10 !important;
-  display: block !important;
-  /* position: absolute; */
 }
 
 .skills {
   font-family: "savedbyzero";
   margin-top: 10px;
   margin-bottom: 10px;
-  /* list-style: none; */
   text-align: start;
-  overflow: hidden;
-}
-
-#pCard1 {
-  overflow-y: scroll;
-  float: right;
-  margin-top: 150px !important;
-  z-index: 10 !important;
-  display: block !important;
-  /* position: absolute; */
+  overflow:visible;
 }
 
 #d1 {
@@ -151,15 +130,11 @@ img {
 }
 
 #imgDisplay {
-  margin-top: 12.5% !important;
   height: 280px !important;
-  z-index: 10;
 }
 
 #hidCaro{
   margin-top: 12.5% !important;
-  height: 280px !important;
-  z-index: 10;
 }
 
 .dropdown {
@@ -196,23 +171,3 @@ img {
 }
 
 
-
-.singleCol{
-    /* position: absolute !important; */
-    /* background-color: red; */
-    /* margin-top:50px !important; */
-    /* margin-bottom:50px !important; */
-    width: 100vw !important;
-    /* margin-top:100px !important;
-    margin-bottom:100px !important; */
-    margin-top: -50px;
-    padding:100px !important;
-    text-align: center !important;
-    right: 0 !important;
-    left:0 !important;
-    float: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-
-
-}
